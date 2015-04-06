@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="simple-harmonic.css">	
+	<title>simple-harmonic</title>
+</head>
+
+<body>
+	<div class='conatiner' id='pageHeader'>
+		<h1>Simple Harmonic Motion</h1>
+		<h3>By Armen Ourfalian</h3>
+	</div>
+	<hr>
+	<div class='container'id='pageBody'>	
+		<div class='container' id='initialValues'>
+			<div id='mass'></div>
+			<div id='springConst'></div>
+			<div id='amplitude'></div>
+			
+		</div>
+
+		<div class='container' id='actionWindow'>
+			<div class='container' id='shoContainer'>
+				<img src="spring.gif" alt="" id='springImage'>
+				<div class='object' id='block'></div>
+				<br><br><br><br>
+				<span id='marker1' class='marker'>|</span>
+				<span id='marker2' class='marker'>|</span>
+				<span id='marker3' class='marker'>|</span>
+			</div>
+		</div>
+
+		<div class='container' id='buttonContainer'>
+			<button id='play'>Play</button>
+			<button id='pause'>Pause</button>
+			<button id='record'>Record Data</button>
+		</div>
+		<br>
+		<div id='printValues' class='container'>
+			<div id='time'></div>
+			<div id='position'></div>
+			<div id='velocity'></div>
+			<div id='force'></div>
+		</div>
+		<br><br><hr>
+		<div class='container' id='dataContainer'>
+			<table id='dataTable'>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Position</th>
+						<th>Velocity</th>
+						<th>Force</th>
+					</tr>
+				</thead>
+				<tbody id='dataTableBody'>
+					
+				</tbody>
+			</table>
+		</div>
+		<hr>
+	</div>
+	<div class='container' id='pageFooter'>
+		<h3>By Armen Ourfalian</h3>
+	</div>
+</body>
+
+<script type='text/javascript' src='jquery-1.11.1.js'></script>
+<script type="text/javascript" src="simple-harmonic.js"></script>
+</html>
